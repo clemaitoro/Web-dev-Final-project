@@ -1,0 +1,65 @@
+/* Your responsive design styles for the 400px resolution go here */
+
+@media screen and (max-width: 400px){
+
+    hr{
+        width: 400px;
+        
+    }
+    #first-hr{
+        margin-left: -20px;;
+    }
+    
+    .navigation a{
+        display: inline;
+        align-items: center;
+        margin-left: 70px;
+        font-size: 10px;
+        
+    }
+    .first-part{
+        padding-bottom: 30px;
+    }
+
+    .first-part p {
+        display: block;
+        text-align: center;
+        
+    }
+    .first-part img{
+        margin-left: 0px;
+        
+    }
+
+    .second-part{
+        flex-direction: column;
+        padding:40px;
+    }
+
+    .second-part .text{
+        text-align: center;
+        width: 100%;
+        
+        font-weight: 400;
+    }
+
+    .second-part .text .smaller{
+        margin-bottom: 40px;
+    }
+    
+    .second-part img{
+        margin-left: 70px;
+        height: 200px;
+        width: 200px;
+    }
+
+    .last-part p{
+        font-size: 7px
+
+    }
+    .last-part .text-last .text-big{
+        font-size: 35px;
+    }
+
+    
+}

@@ -1,0 +1,244 @@
+/* Leave these body styles here. They set the font to Montserrat and removes a margin from the body. */
+body {
+    font-family: "Montserrat";
+    margin: 0px;
+}
+/* Leave these img styles here. Images never should exceed the browser width. */
+img { max-width: 100%; }
+
+/* CSS3 variables (also known as custom properties) for colors.
+   Variables can be defined here for the whole document and you can utilize
+   them by using syntax: var(--variable_name).
+   For example:
+    body {
+        background: var(--background-color);
+    }
+*/
+:root {
+    --background-color: rgba(11,14,23,1);
+    --text-color: rgba(255,255,255,1);
+    --text-color-dim: rgba(255,255,255,0.64);
+
+    --separator-line-color: rgba(101,19,114,0.48);
+
+    --btn-background-color: rgba(58,11,77,1);
+    --btn-border: 2px solid rgba(101,19,114,1);
+    --btn-box-shadow: 6px 0 27px 14px rgba(58,11,77,0.78);
+
+    --form-background-color: rgba(9,6,47,1);
+    --form-border-color: rgba(101,19,114,0.46);
+    --form-text-placeholder-color: rgba(255,255,255,0.26);
+}
+
+/* Your styles go below for the 1060px resolution */
+
+body {
+    /* Example on using the color variable for background */
+    background-color: var(--background-color);
+}
+
+p {
+    /* Example on using the color variables for text */
+    color: var(--text-color-dim);
+}
+
+hr{
+    width: 1060px;
+    margin:0px;
+    margin-top: 20px;
+    border-color: var(--separator-line-color); 
+    
+}
+
+#first-hr{
+    margin-left: -20px;
+}
+.navigation-block{
+    padding: 20px;
+}
+
+.navigation-block a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 1;
+}
+
+.first-part{
+    margin-top: 100px;
+    padding-bottom:  70px;
+    border-bottom: 3px var(--separator-line-color);
+}
+.first-part p{
+    display: flex;
+    justify-content: center;
+    margin:0px ;
+}
+
+.first-part .future{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.first-part img{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 85.5px;
+}
+
+.first-part .limited{
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+.first-part .button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.first-part .button button{
+    background-color: var(--btn-background-color);
+    border: var(--btn-border);
+    box-shadow: var(--btn-box-shadow);
+    padding: 10px 60px 10px 60px;
+    color: white;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.first-part .limited{
+    margin-bottom: 70px;
+}
+
+.second-part{
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px;
+    padding-bottom: 90px;
+    
+}
+
+.second-part .text{
+    font-size: 17px;
+    width: 40%;
+
+}
+
+.second-part .text p{
+    color:var(--text-color-dim);
+    font-size: 17px;
+}
+
+.second-part .text .smallest-1{
+    margin-bottom: 20px;
+}
+
+.second-part .text .Big{
+    font-size: 50px;
+    color: white;
+    margin:0px;
+}
+
+.second-part .text .smaller{
+    font-size: 30px;
+    color :white;
+    margin-top: 0px;
+}
+
+.second-part img{
+    width: 450px;
+    height: 450px;
+}
+
+.last-part{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px;
+    
+}
+.last-part p{
+    margin-bottom: 70px;
+}
+
+.last-part .text-last p{
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.last-part .text-last .text-big{
+    color: var(--text-color);
+    text-align: center;
+    font-size: 50px;
+    margin:0px;
+}
+
+
+.last-part .form-div{
+    background-color: var(--form-background-color);
+    border: var(--btn-border);
+    box-shadow: var(--btn-box-shadow);
+    border-radius: 10px;
+    width: 250px;
+    height: 150px;
+    margin-left: 0px;
+    padding: 20px;
+    padding-bottom: 50px;
+
+}
+
+
+.last-part .form-div input{
+    display: block;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 10px;
+    border:var(--btn-border);
+    box-shadow: var(--btn-box-shadow);
+    background-color: var(--btn-background-color);
+    border-radius: 10px;
+    margin-left: 50px;
+    width: 160px;
+    height: 35px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.last-part .form-div p{
+    display: flex;
+    justify-content: center;
+    font-size: 7px;
+    align-items: center;
+    margin: 0px;
+    margin-top: 20px;
+    max-width: 120px;
+    margin-left: 65px;
+    text-align: center;
+}
+
+#last-hr{
+    margin-bottom: 0px;
+}
+.last-part .form-div .submit-class{
+    color: white;
+}
+.footer-div{
+    background: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.footer-text{
+    text-align: center;
+    font-size: 7px;
+    
+
+}
+
+
+
